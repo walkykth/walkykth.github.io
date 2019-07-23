@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>index</title>
+</head>
+<body>
+   <script>
+      var filter="win16|win32|win64|mac";
+      if(navigator.platform){
+         if(0>filter.indexOf(navigator.platform.toLowerCase())){
+            alert('모바일입니다.');
+            location.href='mobile.html';
+         }else{
+            alert('pc입니다.');
+            location.href='pc.html';
+         }
+      }      
+   </script>
+</body>
+</html>
